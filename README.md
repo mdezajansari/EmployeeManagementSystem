@@ -1,117 +1,126 @@
-# Employee Management System (EMS)
+# Employee Management System (EMS) - Full Stack
 
-A **Full Stack Employee Management System** built with a modern Java + React tech stack.
-
----
-
-## 🛠️ Tech Stack
-
-| Layer | Technology |
-|---|---|
-| **Backend** | Java 17, Spring Boot 3, Spring Security, JWT |
-| **Database** | MySQL |
-| **Frontend** | React (Vite), Tailwind CSS |
-| **Auth** | Role-Based Access Control (Admin / Employee) |
+A comprehensive, enterprise-level Full Stack application designed to streamline HR operations. This project features a robust **Spring Boot** backend and a modern, responsive **React** frontend, providing separate, secure dashboards for Administrators and Employees.
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-### Admin Panel
-- Dashboard with summary cards (Employees, Departments, Payroll, Leaves)
-- Manage Employees — Add, View, Edit employees
-- Manage Departments — Add, Edit, Delete departments
-- Salary Management — View salary history, add new salary records
-- Leave Management — View and filter leave applications (Pending / Approved / Rejected)
-- Change Password
-
-### Employee Portal
-- Personal Dashboard
-- My Profile
-- My Salary History
-- My Leave — View leave status, Apply for new leave
-- Change Password
+🔗 [View Live Project](https://ems-ezaj.netlify.app)
 
 ---
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```
-EMS/
-├── backend/          # Spring Boot REST API
-│   └── src/main/java/com/ems/backend/
-│       ├── controller/
-│       ├── entity/
-│       ├── repository/
-│       ├── security/
-│       └── dto/
-│
-└── frontend/         # React + Vite SPA
-    └── src/
-        ├── components/
-        ├── api/
-        └── App.jsx
-```
+### 🏠 Home / Login Page
+
+![Home](./screenshots/home.png)
+
+### 👨‍💼 Admin Dashboard
+
+![Dashboard-Admin](./screenshots/admin-dashboard.png)
+![Employess](./screenshots/Employee.png)
+
+### 👩‍💻 Employee Dashboard
+
+![Employee Dashboard](./screenshots/employee-dashboard.png)
 
 ---
 
-## ⚙️ Setup & Running Locally
-
-### Backend
-
-1. Create a MySQL database named `ems_db`
-2. Copy `.env.example` to `.env` and fill in your credentials
-3. Set environment variables:
-   ```
-   DB_USERNAME=your_mysql_username
-   DB_PASSWORD=your_mysql_password
-   JWT_SECRET=your_jwt_secret_key
-   ```
-4. Run:
-   ```bash
-   cd backend
-   ./mvnw spring-boot:run
-   ```
-   API runs on **http://localhost:8080**
+## 🛠 Tech Stack
 
 ### Frontend
 
-1. Copy `frontend/.env.example` to `frontend/.env`
-2. Set:
-   ```
-   VITE_API_BASE_URL=http://localhost:8080
-   ```
-3. Run:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-   App runs on **http://localhost:5173**
+* **React.js** (Vite)
+* **Tailwind CSS** (Styling & Layout)
+* **React Router** (Navigation)
+* **Axios** (API Communication)
+* **Playfair Display & Inter** (Typography)
+
+### Backend
+
+* **Java 17**
+* **Spring Boot 3**
+* **Spring Data JPA** (ORM)
+* **Spring Security** (Authentication & RBAC)
+* **MySQL** (Database)
+* **Maven** (Dependency Management)
 
 ---
 
-## 🌐 Deployment
+## ✨ Key Features
 
-| Service | Platform |
-|---|---|
-| Frontend | [Netlify](https://netlify.com) |
-| Backend | [Render](https://render.com) |
-| Database | [PlanetScale](https://planetscale.com) or [Railway](https://railway.app) |
+### Admin Features
 
-Set `VITE_API_BASE_URL` in your Netlify environment variables to your Render backend URL.
+* **Dashboard Analytics:** Visual overview of total employees, departments, and monthly payroll.
+* **Employee Management:** Full CRUD operations (Add, View, Edit, Delete).
+* **Department Management:** Organize the workforce into specific units (IT, HR, Database, etc.).
+* **Leave Management:** Review, approve, or reject employee leave requests with status filtering.
+* **Salary Management:** Add and track salary history, allowances, and deductions for all staff.
+
+### Employee Features
+
+* **Personal Dashboard:** Personal welcome screen with a summary of their status.
+* **Profile View:** View personal details, department info, and profile image.
+* **Leave History:** Track the status of personal leave applications (Pending/Approved/Rejected).
+* **Salary Slips:** View personal salary history and payment dates.
+
+### Security
+
+* **Role-Based Access Control (RBAC):** Restricts sensitive Admin routes from regular users.
+* **Password Encryption:** Uses BCrypt for secure credential storage.
+* **CORS Configuration:** Optimized for secure deployment on Netlify and Render.
 
 ---
 
-## 🔑 Test Credentials
+## 📂 Project Structure
 
-| Role | Email | Password |
-|---|---|---|
-| Admin | Admin@gmail.com | password |
-| User | user@gmail.com | password |
+EMS/
+├── frontend/               # React + Vite + Tailwind
+│   ├── src/components/     # UI Components
+│   ├── src/pages/          # Dashboard & Form Views
+│   └── public/             # Static assets
+└── backend/                # Spring Boot App
+├── src/main/java/      # Java Source Code
+├── src/main/resources/ # application.properties
+└── pom.xml             # Maven dependencies
 
 ---
 
-## 👤 Author
+## ⚙️ Setup Instructions
 
-Built by **MD EZAJ**
+### 1️⃣ Clone Repository
+
+git clone https://github.com/your-username/EmployeeManagementSystem.git
+cd EmployeeManagementSystem
+
+---
+
+### 2️⃣ Frontend Setup
+
+cd frontend
+npm install
+npm run dev
+
+---
+
+### 3️⃣ Backend Setup
+
+cd backend
+./mvnw spring-boot:run
+
+---
+
+## 📌 Future Improvements
+
+* Deploy backend (Render / Railway)
+* Add JWT Authentication
+* Improve UI/UX animations
+* Add export (PDF salary slips)
+
+---
+
+## 👨‍💻 Author
+
+**Md Ezaj**
+Full Stack Developer (Java + React)
