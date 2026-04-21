@@ -1,0 +1,48 @@
+# ══════════════════════════════════════════════════
+#  ROOT .gitignore — EMS Full Stack Project
+# ══════════════════════════════════════════════════
+
+# ─── Frontend (React / Vite) ──────────────────────
+frontend/node_modules
+frontend/dist
+frontend/dist-ssr
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ─── Backend (Spring Boot / Maven) ───────────────
+backend/target/
+backend/.mvn/
+backend/*.jar
+backend/*.war
+backend/HELP.md
+
+# ─── Secrets / Sensitive files ────────────────────
+*.env
+.env
+.env.local
+application-secrets.properties
+
+# ─── IDE / Editor ────────────────────────────────
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.iml
+*.iws
+*.ipr
+.DS_Store
+Thumbs.db
+
+# ─── Logs ────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ─── OS files ────────────────────────────────────
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
