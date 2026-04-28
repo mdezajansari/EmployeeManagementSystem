@@ -6,7 +6,7 @@ A comprehensive, enterprise-level Full Stack application designed to streamline 
 
 ## 🚀 Live Demo
 
-🔗 [View Live Project](https://ems-ezaj.netlify.app)
+![Link]-> (https://ems-ezaj.netlify.app/)
 
 ---
 
